@@ -1,7 +1,7 @@
 # SE282-assignment2
 This repository details my assignment attempt for SOFTENG282 Assignment 2
 
-## File structure
+## Repository structure
 For best results, use [Visual Studio Code](https://code.visualstudio.com/) to browse this repository. My explanations are written in these Markdown (`.md`) files which you are currently reading. To display them as intended, click the "Open Preview to the side" button and drag the preview to the main window, or on Windows machines, `Ctrl+Shift+V` (Shortcuts will differ on different operating systems).
 
     assets
