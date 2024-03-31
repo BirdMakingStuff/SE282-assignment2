@@ -2,14 +2,14 @@
 
 #include "helper.h"
 
-int testFibonacci(unsigned long long n, unsigned long long expectedResult) {
-    printf("Testing fibonacci(%llu):\n", n);
+int testFibonacci(int n, unsigned long long expectedResult) {
+    printf("Testing fibonacci(%i):\n", n);
     unsigned long long result = fibonacci(n);
     if (result == expectedResult) {
-        printf("Testing fibonacci with input %llu passed!\n", n);
+        printf("Testing fibonacci with input %i passed!\n", n);
         return 0;
     } else {
-        printf("Testing fibonacci with input %llu FAILED! Expected %llu but got %llu instead!\n", n, expectedResult, result);
+        printf("Testing fibonacci with input %i FAILED! Expected %llu but got %llu instead!\n", n, expectedResult, result);
         return 1;
     }
 }
