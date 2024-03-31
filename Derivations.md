@@ -3,6 +3,8 @@
 ## Deriving the sum of the Fibonacci numbers
 Initially, I created an Excel sheet of the first 50 Fibonacci numbers and their sums (`fibonacciUpTo50.xlsx`). With the help of a [StackOverflow post](https://math.stackexchange.com/questions/1211909/sum-of-fibonacci-numbers), there was a relationship established between the sum of the Fibonacci numbers and a later Fibonacci number.
 
+![](assets\sumfibonacci.png)
+
 Specifically: let $f(n)$ represent the Fibonacci number function where $n \in \mathbb{N}$, $f(0) = 0$, $f(1) = 1$ and for $n \geq 2, f(n) = f(n - 1) + f(n - 2)$ (from the SOFTENG 282 coursebook). The relationship found was:
 $$\sum^{n}_{i=0} f(i) = f(n+2)- 1 $$
 
@@ -31,7 +33,9 @@ To ensure the maximum possible range for the inputs, the output for `fibonacciSu
 
 I decided to brute-force the result in Excel by calculating Fibonacci numbers and the sum of all Fibonacci numbers up to and including $n = 100$. With this, I was able to quickly figure out that the last possible value of $n$ before the numerical representation of the sum of the Fibonacci numbers would become unreliable is $91$. However, as the assignment brief demonstrates, $0$ is included in the first $1$ Fibonacci numbers, and so we need to subtract $1$ from our inputs of $A$ and $B$ to achieve the desired results.
 
-For fun, I tried to input $A=93, B=92$ into my program to see what would happen. The program calculated the incorrect Fibonacci sum for $A$ and took a long time calculating the $\text{gcd}$.
+![](assets\ninetytwolimit.png)
+
+For fun, I tried to input $A=93, B=92$ into my program to see what would happen. The program calculated the incorrect Fibonacci sum for $A$ and took extremely long time calculating the $\text{gcd}$ (I cancelled it before a result was produced).
 ```
 Enter an input for A: 93
 Enter an input for B: 92
