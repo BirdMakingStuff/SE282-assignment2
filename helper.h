@@ -20,7 +20,7 @@ unsigned long long fibonacci(int n) {
     return result;
 }
 
-// See Derivation.md for how this was derived
+// See Derivations.md for how this was derived
 unsigned long long fibonacciSum(int n) {
     return fibonacci(n + 2) - (unsigned long long) 1;
 }
