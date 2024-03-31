@@ -56,4 +56,17 @@ int main(void) {
     testFibonacciSum(2, 2);
     testFibonacciSum(12, 376);
     testFibonacciSum(52, 86267571271);
+    
+    testGcd(1, 1, 1);
+    testGcd(4, 2, 2);
+    
+    testGcd(3376, 40812, 4);
+    testGcd(62261, 41355, 1);
+    testGcd(123483, 95188, 1);
+    testGcd(123483, 35958, 3);
+    testGcd(895917916, 74398, 2);
+    testGcd(806608185, 30, 15);
+
+    testGcd(570560354, 3871624245, 1);
+    testGcd(3530868474, 1174042843, 1);
 }
